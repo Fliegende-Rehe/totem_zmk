@@ -16,7 +16,6 @@ manifest:
       revision: main
     - name: prospector-zmk-module # <-- dongle 
       remote: carrefinho                        
-      revision: main 
-      import: west.yml                           
+      revision: main                  
   self:
     path: config
