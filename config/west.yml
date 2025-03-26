@@ -2,20 +2,20 @@ manifest:
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
-    - name: caksoylar  # <-- new entry
-      url-base: https://github.com/caksoylar
-    - name: carrefinho                            # <--- add this
-      url-base: https://github.com/carrefinho     # <--- and this
+    - name: caksoylar  
+      url-base: https://github.com/caksoylar # <-- led
+    - name: carrefinho                          
+      url-base: https://github.com/carrefinho   # <-- dongle
   projects:
     - name: zmk
       remote: zmkfirmware
       revision: main
       import: app/west.yml
-    - name: zmk-rgbled-widget  # <-- new entry
+    - name: zmk-rgbled-widget  # <-- led
       remote: caksoylar
       revision: main
-    - name: prospector-zmk-module                 # <--- and these
-      remote: carrefinho                          # <---
-      revision: main                              # <---
+    - name: prospector-zmk-module # <-- dongle 
+      remote: carrefinho                        
+      revision: main                            
   self:
-    path: config
+    path: config,
