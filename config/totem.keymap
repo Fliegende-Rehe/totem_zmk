@@ -86,7 +86,7 @@
         compatible = "zmk,keymap";
 
         qwerty {
-            display-name = "BASE";
+            label = "BASE";
             bindings = <
                   &kp Q       &kp W           &kp E        &kp R        &kp T          &kp Y        &kp U            &kp I        &kp O       &kp P
                   &mt LGUI A  &mt LEFT_ALT S  &mt LSHFT D  &mt LCTRL F  &kp G          &kp H        &mt RCTRL J      &mt RSHFT K  &mt RALT L  &mt RGUI SEMI
@@ -96,7 +96,7 @@
         };
 
         navigation {
-            display-name = "NAVI";
+            label = "NAVI";
             bindings = <
         &none  &none       &kp UP    &none       &kp PG_DN    &kp PG_UP  &none           &kp UP                &none           &none
         &none  &kp LEFT    &kp DOWN  &kp RIGHT   &kp HOME     &kp END    &mt LCTRL LEFT  &mt LSHFT DOWN_ARROW  &mt RALT RIGHT  &kp LGUI
@@ -106,7 +106,7 @@
         };
 
         symbol {
-            display-name = "SYM";
+            label = "SYM";
             bindings = <
         &kp N1                 &kp N2                 &kp N3                   &kp N4                  &kp N5        &kp N6            &kp N7            &kp N8            &kp N9           &kp N0
         &mt LGUI LS(NUMBER_1)  &mt LALT LS(NUMBER_2)  &mt LSHIFT LS(NUMBER_3)  &mt LCTRL LS(NUMBER_4)  &kp LS(N5)    &kp LS(NUMBER_6)  &mt RCTRL LS(N7)  &mt RSHFT LS(N8)  &mt RALT LS(N9)  &mt RGUI LS(N0)
@@ -116,7 +116,7 @@
         };
 
         func {
-            display-name = "ADJ";
+            label = "ADJ";
             bindings = <
         &mt F11 F1  &mt F12 F2  &mt F13 F3  &mt F14 F4  &mt F15 F5    &mt F16 F6  &mt F17 F7  &mt F18 F8  &mt F19 F9  &mt F20 F10
         &kp LGUI    &kp LALT    &kp LSHFT   &kp LCTRL   &trans        &trans      &kp RCTRL   &kp RSHFT   &kp RALT    &kp RGUI
@@ -126,7 +126,7 @@
         };
 
         game {
-            display-name = "GAME";
+            label = "GAME";
             bindings = <
        &kp TAB    &kp Q  &kp W   &kp E     &kp R        &trans     &kp Q     &kp UP    &trans     &kp ESC
        &kp LSHFT  &kp A  &kp S   &kp D     &kp F        &trans     &kp LEFT  &kp DOWN  &kp RIGHT  &trans
