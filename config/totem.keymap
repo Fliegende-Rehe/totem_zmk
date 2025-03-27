@@ -96,9 +96,9 @@
         func {
             display-name = "ADJ";
             bindings = <
-        &mt F11 F1  &mt F12 F2  &mt F13 F3  &mt F14 F4  &mt F15 F5    &mt F16 F6  &mt F17 F7  &mt F18 F8  &mt F19 F9   &mt F20 F10
-        &kp LGUI    &kp LALT    &kp LSHFT   &kp LCTRL   &none         &none       &kp RCTRL   &kp RSHFT   &kp RALT     &kp RGUI
-&tog 3  &none       &bt BT_PRV  &bt BT_CLR  &bt BT_NXT  &none         &none       &sys_reset  &soft_off   &bootloader  &none        &tog 3
+        &mt F11 F1  &mt F12 F2  &mt F13 F3  &mt F14 F4  &mt F15 F5    &mt F16 F6  &mt F17 F7  &mt F18 F8      &mt F19 F9   &mt F20 F10
+        &kp LGUI    &kp LALT    &kp LSHFT   &kp LCTRL   &none         &none       &kp RCTRL   &kp RSHFT       &kp RALT     &kp RGUI
+&tog 3  &none       &bt BT_PRV  &bt BT_CLR  &bt BT_NXT  &none         &none       &sys_reset  &studio_unlock  &bootloader  &none        &tog 3
                                 &none       &none       &none         &none       &none       &none
             >;
         };
