@@ -106,10 +106,10 @@
         game {
             display-name = "GAME";
             bindings = <
-       &kp TAB    &kp Q  &kp W   &kp E     &kp R        &trans     &kp Q     &kp UP    &kp E      &kp ESC
-       &kp LSHFT  &kp A  &kp S   &kp D     &kp F        &trans     &kp LEFT  &kp DOWN  &kp RIGHT  &trans
-&kp G  &kp LCTRL  &kp Z  &kp X   &kp C     &kp V        &kp N1     &kp N2    &kp F2    &kp F5     &kp F6   &kp M
-                         &trans  &kp LALT  &kp SPACE    &kp ENTER  &tog 4    &trans
+       &kp TAB    &kp Q  &kp W   &kp E     &kp R        &kp C_VOL_UP  &kp Q     &kp UP    &kp E      &kp ESC
+       &kp LSHFT  &kp A  &kp S   &kp D     &kp F        &kp C_VOL_DN  &kp LEFT  &kp DOWN  &kp RIGHT  &trans
+&kp G  &kp LCTRL  &kp Z  &kp X   &kp C     &kp V        &kp N1        &kp N2    &kp F2    &kp F5     &kp F6   &kp M
+                         &trans  &kp LALT  &kp SPACE    &kp ENTER     &tog 4    &trans
             >;
         };
     };
