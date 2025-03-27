@@ -44,41 +44,19 @@
             key-positions = <34 35>;
         };
 
-        window2left {
+        move_window {
             bindings = <&kp LS(LG(LEFT))>;
-            key-positions = <4 3>;
-        };
-
-        window2right {
-            bindings = <&kp LS(LG(RIGHT))>;
-            key-positions = <6 5>;
+            key-positions = <2 7>;
         };
 
         esc_right {
             bindings = <&kp ESC>;
-            key-positions = <8 9>;
+            key-positions = <17 18 16>;
         };
 
         esc_left {
             bindings = <&kp ESC>;
-            key-positions = <0 1>;
-        };
-    };
-
-    macros {
-        gif: gif {
-            label = "giphy";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp LSHFT>,
-                <&macro_tap>,
-                <&kp N2>,
-                <&macro_release>,
-                <&kp LSHFT>,
-                <&macro_tap>,
-                <&kp G &kp I &kp F>;
+            key-positions = <11 12 13>;
         };
     };
 
@@ -91,17 +69,17 @@
                   &kp Q       &kp W           &kp E        &kp R        &kp T          &kp Y        &kp U            &kp I        &kp O       &kp P
                   &mt LGUI A  &mt LEFT_ALT S  &mt LSHFT D  &mt LCTRL F  &kp G          &kp H        &mt RCTRL J      &mt RSHFT K  &mt RALT L  &mt RGUI SEMI
 &kp LEFT_BRACKET  &kp Z       &kp X           &kp C        &kp V        &kp B          &kp N        &kp M            &kp COMMA    &kp DOT     &kp FSLH       &kp SQT
-                                              &kp ESC      &lt 2 TAB    &lt 1 SPACE    &lt 1 ENTER  &lt 2 BACKSPACE  &kp TAB
+                                              &kp DEL      &lt 2 TAB    &lt 1 SPACE    &lt 1 ENTER  &lt 2 BACKSPACE  &kp ESCAPE
             >;
         };
 
         navigation {
             display-name = "NAVI";
             bindings = <
-        &none  &none       &kp UP    &none       &kp PG_DN    &kp PG_UP  &none           &kp UP                &none           &none
-        &none  &kp LEFT    &kp DOWN  &kp RIGHT   &kp HOME     &kp END    &mt LCTRL LEFT  &mt LSHFT DOWN_ARROW  &mt RALT RIGHT  &kp LGUI
-&tog 4  &none  &kp C_PREV  &kp C_PP  &kp C_NEXT  &none        &none      &kp C_VOL_DN    &kp C_MUTE            &kp C_VOL_UP    &none     &tog 4
-                           &trans    &kp DEL     &trans       &trans     &kp BSPC        &trans
+        &none         &none       &kp UP    &none       &kp PG_DN     &kp PG_UP  &none           &kp UP                &none           &none
+        &kp LEFT_GUI  &kp LEFT    &kp DOWN  &kp RIGHT   &kp HOME      &kp END    &mt LCTRL LEFT  &mt LSHFT DOWN_ARROW  &mt RALT RIGHT  &kp LGUI
+&tog 4  &none         &kp C_PREV  &kp C_PP  &kp C_NEXT  &kp INSERT    &kp BSPC   &kp C_VOL_DN    &kp C_MUTE            &kp C_VOL_UP    &none     &tog 4
+                                  &trans    &none       &trans        &trans     &none           &trans
             >;
         };
 
@@ -118,17 +96,17 @@
         func {
             display-name = "ADJ";
             bindings = <
-        &mt F11 F1  &mt F12 F2  &mt F13 F3  &mt F14 F4  &mt F15 F5    &mt F16 F6  &mt F17 F7  &mt F18 F8  &mt F19 F9  &mt F20 F10
-        &kp LGUI    &kp LALT    &kp LSHFT   &kp LCTRL   &trans        &trans      &kp RCTRL   &kp RSHFT   &kp RALT    &kp RGUI
-&tog 3  &trans      &bt BT_PRV  &bt BT_CLR  &bt BT_NXT  &trans        &trans      &trans      &trans      &trans      &trans       &tog 3
-                                &trans      &trans      &trans        &trans      &trans      &trans
+        &mt F11 F1  &mt F12 F2  &mt F13 F3  &mt F14 F4  &mt F15 F5    &mt F16 F6  &mt F17 F7  &mt F18 F8  &mt F19 F9   &mt F20 F10
+        &kp LGUI    &kp LALT    &kp LSHFT   &kp LCTRL   &none         &none       &kp RCTRL   &kp RSHFT   &kp RALT     &kp RGUI
+&tog 3  &none       &bt BT_PRV  &bt BT_CLR  &bt BT_NXT  &none         &none       &sys_reset  &soft_off   &bootloader  &none        &tog 3
+                                &none       &none       &none         &none       &none       &none
             >;
         };
 
         game {
             display-name = "GAME";
             bindings = <
-       &kp TAB    &kp Q  &kp W   &kp E     &kp R        &trans     &kp Q     &kp UP    &trans     &kp ESC
+       &kp TAB    &kp Q  &kp W   &kp E     &kp R        &trans     &kp Q     &kp UP    &kp E      &kp ESC
        &kp LSHFT  &kp A  &kp S   &kp D     &kp F        &trans     &kp LEFT  &kp DOWN  &kp RIGHT  &trans
 &kp G  &kp LCTRL  &kp Z  &kp X   &kp C     &kp V        &kp N1     &kp N2    &kp F2    &kp F5     &kp F6   &kp M
                          &trans  &kp LALT  &kp SPACE    &kp ENTER  &tog 4    &trans
